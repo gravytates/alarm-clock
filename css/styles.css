@@ -1,0 +1,43 @@
+.bell {
+  display: none;
+}
+
+body {
+  color: #42f4f1;
+  background-color: black;
+  font-family: 'Space Mono', monospace;
+}
+
+h1 {
+  text-align: center;
+  font-size: 100px;
+}
+
+h2 {
+  text-align: center;
+}
+
+input {
+  color: black;
+}
+
+#msg {
+  animation: blinker 0.5s linear infinite;
+}
+
+@keyframes blinker {
+  50% { opacity: 0; }
+}
+
+@keyframes blinker2 {
+  100% { opacity: 0.5; }
+}
+
+
+#time1 {
+  animation: blinker2 1s linear infinite;
+}
+
+button {
+  justify-content: center;
+}

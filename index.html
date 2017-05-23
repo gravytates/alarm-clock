@@ -6,8 +6,35 @@
     <script src="build/js/vendor.min.js"></script>
     <script src="build/js/app.js"></script>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
     <title>Alarm Clock</title>
   </head>
   <body>
+    <div class="container">
+      <h2>The current time is:</h2>
+      <h2><span id="time2"></span></h2>
+      <h1><span id="time1"></span></h1>
+      <br>
+      <form id="timer">
+        <label for="alarm">Set Timer (Seconds)</label>
+        <input type="number" id="seconds" min="1" max="1440">
+        <button type="submit" class="btn btn-primary">Set Timer</button>
+      </form>
+      <form id="alarm">
+        <label for="alarm">Set Alarm</label>
+        <input type="time" id="settime" min="1" max="1440">
+        <button type="submit" class="btn btn-primary">Set Alarm</button>
+      </form>
+      <div class="bell">
+        <h1 id="msg"><b><em>Wake up!</b></em></h1>
+        <button id="reset" class="btn btn-warning">Snooze</button>
+        <button id="off" class="btn btn-danger">Off</button>
+      </div>
+
+      <form class="" action="index.html" method="post">
+
+      </form>
+
+    </div>
   </body>
 </html>
