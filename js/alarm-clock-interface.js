@@ -5,9 +5,9 @@ $(document).ready(function(){
   var async = function() {
     $('#time1').text(moment().format('h:mm:ss a'));
     $('#time2').text(moment().format('MMMM Do YYYY'));
-    let current_time = "0".concat(moment().format('h:mm:ss'));
-    console.log(current_time.toString())
-    console.log(alarm_time.toString())
+    let current_time = moment().format('HH:mm:ss');
+    console.log(current_time)
+    console.log(alarm_time)
     if(current_time == alarm_time) {
       alarm();
     }
@@ -18,6 +18,8 @@ $(document).ready(function(){
   var alarm = function() {
     $('.bell').show();
     console.log("Wake Up!");
+    var audio = new Audio('sound/alarm.mp3');
+    audio.play();
   }
 
 
